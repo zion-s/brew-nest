@@ -8,8 +8,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const Home = ()=>{
   return(
-  <div>
-    <h1>Home Page</h1>
+  <div className="homepage">
+    <p>All your tipsy trivia in one place</p>
   </div>
   )
 }

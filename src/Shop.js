@@ -17,10 +17,10 @@ const fetchItems = async ()=>{
 }
 
   return (
-    <div className="boozeList">
-        <p>Click any to know more:</p>
-        {items.map((item,i)=><p key={item.id}><Link to={`/shop/${item.id}`}>{i+1}.&nbsp;&nbsp;{item.name}</Link></p>)}
-    </div>
+        <div className="boozeList">
+                <p>Click any to know more:</p>
+                {items.map((item,i)=><p key={item.id}><Link to={`/shop/${item.id}`}>{i+1}.&nbsp;&nbsp;{item.name}</Link></p>)}
+        </div>
   );
 }
 

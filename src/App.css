@@ -7,8 +7,11 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: rgb(35, 49, 116);
+  width: 100vw;
+  background-color: #c28935;
   color: white;
+  position: fixed;
+  top: 0;
 }
 
 .nav-links{
@@ -17,15 +20,55 @@ nav{
   justify-content: space-evenly;
   list-style: none;
 }
+.homepage{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(77, 67, 46, 0.473)),
+  url('./assests/cover.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.homepage>p{
+  margin-top: 0;
+  padding-top: 45vh;
+  font-size: 2.2em;
+  color: white;
+  text-transform: capitalize;
+}
+.aboutpage{
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(34, 30, 22, 0.473)),
+  url('./assests/about.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutpage>p{
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 25vh;
+  font-size: 1.2em;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+}
+
+
 a{
   text-decoration: none;
-  color: rgb(35, 49, 116);
+  color: #c28935;
 }
 a:visited{
-  color: rgb(35, 49, 116);
+  color: #c28935;
 }
 
 .boozeList{
   text-align: left;
+  padding-top: 10vh;
   padding-left: 5%;
+  height: 90vh;
+  width: 100vw;
+  overflow-y: scroll;
+  background-color: rgb(255, 255, 255);
 }
