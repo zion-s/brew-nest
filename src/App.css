@@ -17,3 +17,15 @@ nav{
   justify-content: space-evenly;
   list-style: none;
 }
+a{
+  text-decoration: none;
+  color: rgb(35, 49, 116);
+}
+a:visited{
+  color: rgb(35, 49, 116);
+}
+
+.boozeList{
+  text-align: left;
+  padding-left: 5%;
+}

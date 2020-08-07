@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 
 function Shop() {
-    // const app_ID = '391d0a68';
-    // const app_KEY = '16d2e548b6ab2de17518b2eade3837a0';
 
     useEffect(()=>{
         fetchItems();
@@ -18,8 +17,9 @@ const fetchItems = async ()=>{
 }
 
   return (
-    <div>
-        {items.map(item=><h3 key={item.id}>{item.name}</h3>)}
+    <div className="boozeList">
+        <p>Click any to know more:</p>
+        {items.map((item,i)=><p key={item.id}><Link to={`/shop/${item.id}`}>{i+1}.&nbsp;&nbsp;{item.name}</Link></p>)}
     </div>
   );
 }
